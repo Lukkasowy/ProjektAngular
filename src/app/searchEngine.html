@@ -1,0 +1,33 @@
+<form class="example-form">
+  <div class="bar">
+    <input type="text"
+          id = "value"
+          class = "text"
+          #value
+          placeholder="Search.."
+          [formControl]="control"
+          [matAutocomplete]="auto">
+  
+    <button mat-raised-button (click)="onClickHandler(value.value) " >Search</button>
+  </div>
+
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let phrase of filteredPhrases | async" [value]="phrase">
+      {{phrase}}
+    </mat-option>
+  </mat-autocomplete>
+
+  
+
+</form>
+
+
+
+
+
+
+
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->

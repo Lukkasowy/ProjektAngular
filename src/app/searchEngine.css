@@ -1,0 +1,14 @@
+
+.example-form {
+  width: 100%;
+}
+
+.bar{
+  position: relative;
+  left: 750px;
+  top: 370px;
+}
+.text{
+  height: 30px;
+  width: 300px;
+}
